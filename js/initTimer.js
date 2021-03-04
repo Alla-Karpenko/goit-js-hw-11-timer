@@ -1,7 +1,7 @@
-import CountdownTimer from './timer'
+import CountdownTimer from '.timer'
 
 
-function initTimer(selector, targetData) {
+function initTimer(selector, targetDate) {
     const time = new CountdownTimer({ selector, targetDate })
     time.start()
 }

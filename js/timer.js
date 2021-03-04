@@ -6,10 +6,10 @@ export default class CountdownTimer {
         this.timerId = null;
         
         this.refs = {
-            day: document.querySelector(`${selector}[data-value="days"]`),
-            hour: document.querySelector(`${selector}[data-value="hours"] `),
-            minute: document.querySelector(` ${selector}[data-value="mins"]`),
-            second: document.querySelector(`${selector}[data-value="secs"]`),
+            days: document.querySelector(`${selector}[data-value="days"]`),
+            hours: document.querySelector(`${selector}[data-value="hours"] `),
+            mins: document.querySelector(` ${selector}[data-value="mins"]`),
+            secs: document.querySelector(`${selector}[data-value="secs"]`),
         }
     }
     start() {
@@ -20,12 +20,12 @@ export default class CountdownTimer {
         }, 1000); 
         
     }
-    updateClockface({ day, hours, minute, second }) {
-        const { day, hours, minute, second } = this.refs
-        day.textContent = day;
-        hours.textContent = hours;
-        minute.textContent = minute;
-        second.textContent = second;
+    updateClockface({ days, hours, mins, secs }) {
+        const { days, hours, mins, secs } = this.refs
+        days.textContent = days
+        hours.textContent = hours
+        mins.textContent = mins
+        secs.textContent = secs
     }
 
 }
