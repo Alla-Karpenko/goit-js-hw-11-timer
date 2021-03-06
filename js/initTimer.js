@@ -1,4 +1,4 @@
-import CountdownTimer from '.timer'
+import CountdownTimer from './timer'
 
 
 function initTimer(selector, targetDate) {
