@@ -16,5 +16,4 @@ function moment(time) {
     return format(time)
 }
 
-export default moment
- 
+export default 
